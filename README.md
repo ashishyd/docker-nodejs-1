@@ -11,6 +11,8 @@ Once you have the id, execute where p is to publish the local port 3000 for cont
 
 `docker run -p 3000:80 -d <id>` where d is for de-attached flag
 
+`docker run -p 3000:80 -d --rm <id>` where rm is for removing container after exit automatically
+
 Alternatively, you can use `docker start <id>`, this does not block the terminal (de-attached mode)
 
 `docker start -a <id>` to start in attached mode
